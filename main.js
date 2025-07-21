@@ -77,6 +77,21 @@ console.log("*=: ", (r *= g));
 console.log("/=: ", (r /= g));
 console.log("%=: ", (t %= r));
 
+//Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
+//!: not operator
+//!=: not equal operator
+//==: equals in value but not in data type
+//===: equal value and data type
 
+var num1 = 10;
+var num2 = "10";
+console.log("Equal to: ", num1 == num2);
+console.log("Strict Equal to: ", num1 === num2);
+console.log("Not Equal to: ", num1 != num2);
+console.log("Strict Not Equal to: ", num1 !== num2);
+console.log("Greater than: ", num1 > num2);
+console.log("Less than: ", num1 < num2);
+console.log("Greater than or equal to: ", num1 >= num2);
+console.log("Less than or equal to: ", num1 <= num2);
 
-
+//
