@@ -65,7 +65,7 @@ console.log("Increment x again, but with ++ before variable name: ", ++x);
 console.log("Decrement y: ", y--);
 console.log("Decrement y again, but with -- before variable name: ", --y);
 
-//Compound Assignment Operators: +=, -=, *=, /=, %===
+// Compound Assignment Operators: +=, -=, *=, /=, %===
 var t = 9;
 var p = 11;
 var r = 3;
@@ -77,21 +77,37 @@ console.log("*=: ", (r *= g));
 console.log("/=: ", (r /= g));
 console.log("%=: ", (t %= r));
 
-//Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
-//!: not operator
-//!=: not equal operator
-//==: equals in value but not in data type
-//===: equal value and data type
+// Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
+// !: not operator
+// !=: not equal operator
+// ==: equals in value but not in data type
+// ===: equal value and data type
 
 var num1 = 10;
 var num2 = "10";
-console.log("Equal to: ", num1 == num2);
-console.log("Strict Equal to: ", num1 === num2);
-console.log("Not Equal to: ", num1 != num2);
-console.log("Strict Not Equal to: ", num1 !== num2);
-console.log("Greater than: ", num1 > num2);
-console.log("Less than: ", num1 < num2);
-console.log("Greater than or equal to: ", num1 >= num2);
-console.log("Less than or equal to: ", num1 <= num2);
+var num3 = 20;
+console.log("Equal to: ", num1 == num2); // true, value is equal
+console.log("Strict Equal to: ", num1 === num2); // false, value and type are not equal
+console.log("Not Equal to: ", num1 != num2); // false, value is equal
+console.log("Strict Not Equal to: ", num1 !== num2); // true, data type are not equal
+console.log("Greater than: ", num1 > num2); // false
+console.log("Less than: ", num1 < num2); // false
+console.log("Greater than or equal to: ", num1 >= num2); // true
+console.log("Less than or equal to: ", num1 <= num2); // true
 
-//
+// Logical Operators: &&, ||, !
+// &&: AND operator
+// ||: OR operator
+// !: Negation operator
+
+console.log("&&: ", num1 == num2 && num1 === num2); // false, one of the conditions return false
+
+// When using the || operator, if first condition is true, second condition is not checked
+console.log("||: ", num3 > num1 || num3 < num2); // true, one of the conditions returns true
+
+// Left hand comparison is true, right hand is false but flips true due to negation operator.
+console.log("&&: ", num1 == num2 && !(num1 === num2)); // true
+
+
+
+
