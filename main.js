@@ -108,6 +108,32 @@ console.log("||: ", num3 > num1 || num3 < num2); // true, one of the conditions 
 // Left hand comparison is true, right hand is false but flips true due to negation operator.
 console.log("&&: ", num1 == num2 && !(num1 === num2)); // true
 
+// String Manipulation
+var firstname = "John",
+  lastname = "Doe";
 
+// String concatenation - joining of two or more strings
+var fullname = firstname + " " + lastname;
+console.log("Full Name: " + fullname);
 
+// Using backticks (template literals)
+var fullname2 = `${firstname} ${lastname}`;
+console.log("Full Name 2: " + fullname2);
 
+// Using .concat method
+var fullname3 = firstname.concat(" ", lastname);
+console.log("Full Name 3: " + fullname3);
+
+// String Methods (function) & properties (variables)
+// 1. length: returns the character count/length of the string
+//  strings are zero indexed like arrays
+console.log("Firstname length: ", firstname.length);
+
+// 2. toUpperCase - converts a string to uppercase
+console.log("Uppercase: ", firstname.toUpperCase());
+
+// 3. indexOf - returns the index of a character in a string
+console.log("IndexOf N: ", firstname.indexOf("n")); // 3, since strings are array indexed
+
+// 4. charAt - return the character at a specific index
+console.log("charAt 3: ", firstname.charAt(3));
